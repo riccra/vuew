@@ -101,12 +101,14 @@
       dark
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <router-link to="/">
       <v-toolbar-title
-        style="width: 300px"
+        style="width: 300px;color:#fff;"
         class="ml-0 pl-4"
       >
         <span class="hidden-sm-and-down">Vuew</span>
       </v-toolbar-title>
+      </router-link>
 
       <v-text-field
         flat
@@ -124,6 +126,7 @@
         <v-icon>mdi-bell</v-icon>
       </v-btn>
     
+    <router-link to="/About">
       <v-btn
         icon
         large
@@ -140,6 +143,7 @@
           ></v-img></v-avatar>
 
       </v-btn>
+      </router-link>
     </v-app-bar>
     
 
@@ -292,11 +296,12 @@
       <span>Main</span>
     </v-btn>
 
-
+<router-link to="/MovieSearch">
     <v-btn>
       <span>Video</span>
       <v-icon>mdi-television-play</v-icon>
     </v-btn>
+</router-link>
 
     <v-btn>
       <span>Audio</span>

@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import VueHome from "../views/Home.vue";
-//import VueMap from "../views/Mapiframe.vue";
+import vueMovieSearch from "../components/MovieSearch.vue";
 import Contacts from "../views/Contacts.vue";
 //import NodeNetwork from "../views/NodeNetwork.vue";
 
@@ -17,6 +17,11 @@ const routes = [
     path: "/contacts",
     name: "Contacts",
     component: Contacts
+  },
+  {
+    path: "/moviesearch",
+    name: "Movie Search",
+    component: vueMovieSearch
   },
   {
     path: "/about",
